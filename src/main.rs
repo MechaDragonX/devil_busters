@@ -35,5 +35,30 @@ fn main() {
     // println!("{}", pikachu);
 
     let mut coburg: Field = Field::new(5, 5);
+    coburg.area[0][0] = Terrain::Water;
+    coburg.area[0][1] = Terrain::Water;
+    coburg.area[0][2] = Terrain::Water;
+    coburg.area[0][3] = Terrain::Mountains;
+    coburg.area[0][4] = Terrain::Mountains;
+    coburg.area[1][0] = Terrain::Water;
+    coburg.area[1][1] = Terrain::Water;
+    coburg.area[1][2] = Terrain::Water;
+    coburg.area[1][3] = Terrain::Mountains;
+    coburg.area[1][4] = Terrain::Mountains;
+    coburg.area[2][0] = Terrain::Water;
+    coburg.area[2][1] = Terrain::Water;
+    coburg.area[2][2] = Terrain::Water;
+    coburg.area[2][3] = Terrain::Mountains;
+    coburg.area[2][4] = Terrain::Mountains;
+    coburg.area[3][0] = Terrain::Land;
+    coburg.area[3][1] = Terrain::Land;
+    coburg.area[3][2] = Terrain::Land;
+    coburg.area[3][3] = Terrain::Mountains;
+    coburg.area[3][4] = Terrain::Mountains;
+    coburg.area[4][0] = Terrain::Land;
+    coburg.area[4][1] = Terrain::Land;
+    coburg.area[4][2] = Terrain::Land;
+    coburg.area[4][3] = Terrain::Land;
+    coburg.area[4][4] = Terrain::Land;
     println!("{}", coburg);
 }

@@ -43,11 +43,10 @@ impl fmt::Display for Field {
 
         for i in 0..self.area.len() {
             for j in 0..self.area[0].len() {
-                if j < self.area[0].len() - 1 {
-                    result += format!("{} ", self.area[i as usize][j as usize]).as_str();
-                } else {
-                    result += format!("{}\n", self.area[i as usize][j as usize]).as_str();
-                }
+                result += format!("{} ", self.area[i as usize][j as usize]).as_str();
+            }
+            if i < self.area.len() - 1 {
+                result += "\n";
             }
         }
 
